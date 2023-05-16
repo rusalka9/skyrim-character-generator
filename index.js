@@ -1,6 +1,6 @@
 const raceArray = ["High Elf", "Dark Elf", "Wood Elf", "Orc", "Khajiit", "Argonian", "Nord", "Breton", "Imperial", "Redguard"];
 const stoneArray = ["Mage", "Thief", "Warrior", "Lady", "Lover", "Lord", "Shadow", "Tower", "Ritual", "Serpent", "Apprentice", "Atronach", "Steed"];
-const factionArray = ["Companions", "College of Winterhold", "Dark Brotherhood", "Thieves' Guild", "Stormcloaks", "Dawnguard", "Volkihar Vampires"];
+const factionArray = ["Companions", "College of Winterhold", "Dark Brotherhood", "Thieves Guild", "Stormcloaks", "Dawnguard", "Volkihar Vampires"];
 const skillsArray = ["Alchemy", "Alteration", "Archery", "Block", "Conjuration", "Destruction", "Enchanting", "Heavy Armor", "Illusion", "Light Armor", "Lockpicking", "One-Handed", "Pickpocket", "Restoration", "Smithing", "Sneak", "Speech", "Two-Handed"];
 
 const pickRandom = (array, num = 1) => {
