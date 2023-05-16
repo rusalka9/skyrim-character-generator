@@ -1,8 +1,3 @@
-let raceResult = "";
-let stoneResult = "";
-let factionResult = "";
-let skillsResult = [];
-
 const raceArray = ["High Elf", "Dark Elf", "Wood Elf", "Orc", "Khajiit", "Argonian", "Nord", "Breton", "Imperial", "Redguard"];
 const stoneArray = ["Mage", "Thief", "Warrior", "Lady", "Lover", "Lord", "Shadow", "Tower", "Ritual", "Serpent", "Apprentice", "Atronach", "Steed"];
 const factionArray = ["Companions", "College of Winterhold", "Dark Brotherhood", "Thieves' Guild", "Stormcloaks", "Dawnguard", "Volkihar Vampires"];
@@ -20,3 +15,17 @@ const pickRandom = (array, num = 1) => {
     };
     return result;
 };
+
+const generateCharacter = () => {
+    let raceResult = pickRandom(raceArray, 1);
+    let stoneResult = pickRandom(stoneArray, 1);
+    let factionResult = pickRandom(factionArray, 1);
+    let skillsResult = pickRandom(skillsArray, 5);
+
+    console.log(raceResult);
+    console.log(stoneResult);
+    console.log(factionResult);
+    console.log(skillsResult);
+};
+
+generateCharacter();
