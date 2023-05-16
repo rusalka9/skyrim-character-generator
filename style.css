@@ -12,7 +12,7 @@ body {
 header {
     background-color: aquamarine;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 1em;
 }
@@ -36,7 +36,8 @@ a {
     display: flex;
     flex-direction: column;
     gap: 1em;
-    max-width: 64em;
+    min-width: 700px;
+    align-self: center;
 }
 
 main {
@@ -67,6 +68,12 @@ h1 {
     border: 2px solid green;
     min-height: 50vh;
     flex-grow: 3;
+    gap: 1em;
+}
+
+.characterElement {
+    border: 2px solid magenta;
+    text-align: center;
 }
 
 #newCharacterBtn {
