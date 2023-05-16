@@ -16,16 +16,39 @@ const pickRandom = (array, num = 1) => {
     return result;
 };
 
+const raceText = document.querySelector("#raceText");
+const stoneText = document.querySelector("#stoneText");
+const factionText = document.querySelector("#factionText");
+const skillText1 = document.querySelector("#skillText1");
+const skillText2 = document.querySelector("#skillText2");
+const skillText3 = document.querySelector("#skillText3");
+const skillText4 = document.querySelector("#skillText4");
+const skillText5 = document.querySelector("#skillText5");
+
+raceText.textContent = "x";
+stoneText.textContent = "x";
+factionText.textContent = "x";
+skillText1.textContent = "x";
+skillText2.textContent = "x";
+skillText3.textContent = "x";
+skillText4.textContent = "x";
+skillText5.textContent = "x";
+
 const generateCharacter = () => {
     let raceResult = pickRandom(raceArray, 1);
     let stoneResult = pickRandom(stoneArray, 1);
     let factionResult = pickRandom(factionArray, 1);
     let skillsResult = pickRandom(skillsArray, 5);
 
-    console.log(raceResult);
-    console.log(stoneResult);
-    console.log(factionResult);
-    console.log(skillsResult);
+    raceText.textContent = raceResult[0];
+    stoneText.textContent = stoneResult[0];
+    factionText.textContent = factionResult[0];
+    skillText1.textContent = skillsResult[0];
+    skillText2.textContent = skillsResult[1];
+    skillText3.textContent = skillsResult[2];
+    skillText4.textContent = skillsResult[3];
+    skillText5.textContent = skillsResult[4];
 };
 
-generateCharacter();
+const newCharacterBtn = document.querySelector("#newCharacterBtn");
+newCharacterBtn.addEventListener("click", generateCharacter);
