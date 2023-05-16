@@ -25,15 +25,6 @@ const skillText3 = document.querySelector("#skillText3");
 const skillText4 = document.querySelector("#skillText4");
 const skillText5 = document.querySelector("#skillText5");
 
-raceText.textContent = "x";
-stoneText.textContent = "x";
-factionText.textContent = "x";
-skillText1.textContent = "x";
-skillText2.textContent = "x";
-skillText3.textContent = "x";
-skillText4.textContent = "x";
-skillText5.textContent = "x";
-
 const generateCharacter = () => {
     let raceResult = pickRandom(raceArray, 1);
     let stoneResult = pickRandom(stoneArray, 1);
@@ -52,3 +43,5 @@ const generateCharacter = () => {
 
 const newCharacterBtn = document.querySelector("#newCharacterBtn");
 newCharacterBtn.addEventListener("click", generateCharacter);
+
+generateCharacter();
